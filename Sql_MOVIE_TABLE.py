@@ -4,13 +4,13 @@ cursor = connection.cursor()
 cursor.execute('''CREATE TABLE IF NOT EXISTS Movies
               (MovieName TEXT,Actor TEXT,Actress TEXT, Year INT,Director TEXT)''')
 INSERT INTO Movies (MovieName,Actor,Actress,Year,Director)
-VALUES ('Junga', 'Vijay Sethupathi', 'Sayyesha Saigal', 2018,'Gokul' );
+VALUES ('KRK', 'Vijay Sethupathi', 'Samantha', 2022,'Viki' );
 INSERT INTO Movies (MovieName,Actor,Actress,Year,Director)
-VALUES ('Ajith', 'Visvasam', 'Nayanthara', 2019,'Siva' );
+VALUES ('Valimai', 'Ajith', 'Huma Qureshi', 2022,'Vinoth' );
 INSERT INTO Movies (MovieName,Actor,Actress,Year,Director)
-VALUES ('Master', 'Vijay Sethupathi', 'Malvika Mohan', 2021,'Loki' );
+VALUES ('Master', 'Vijay', 'Malvika Mohan', 2021,'Loki' );
 INSERT INTO Movies (MovieName,Actor,Actress,Year,Director)
-VALUES ('Red', 'AK', 'Sai', 2001,'Noper' );
+VALUES ('Don', 'SK', 'Priyanka Mohan', 2022,'Cibi Chakaravarthi' );
 cursor.execute('''SELECT * from Movies''')
 result = cursor.fetchone();
 print(result)
